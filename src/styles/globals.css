@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primerybackground: #3d0068;
+  --darkPrimery: #401f4a;
+  --gray: #f6f6f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.side-navbar{
+background-color: var(--primerybackground);
+}
+.side-navbar__profile{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.transction.svg{
+  transform: rotate(90deg);
+}
+.nav_menuList svg{
+  width: 20px;
+  height: 20px;
+}
+.dash-board_wrapper{
+  width: calc(100% - 250px);
+}
+.top-nav_user.action_status{
+  
+}
+
+.dashboard_main .nav-link{
+  border: unset;
+  background-color: var(--primerybackground);
+  color: var(--background);
+  padding: 6px 15px !important;
+  border-radius: 0.6rem !important;
+  font-size: 14px!important;
+}
+.dashboard_main .nav-link.active{
+  background-color: var(--darkPrimery)!important;
+  color: var(--background)!important;
+}
+
+.address_card h5{
+  border-bottom: 1px solid;
+}
+.sale_table .nav-link{
+  border-radius: 0rem !important;
+}
+.sale_table .table th{
+  background-color: var(--primerybackground)!important;
+  color: white;
+}
